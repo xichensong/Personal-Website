@@ -21,6 +21,7 @@ type CategoryGroup = { heading: string; items: SidebarEntry[] };
 
 const DURATION = 900;
 const EASING = "cubic-bezier(0.65,0,0.35,1)";
+const SITE_URL = "https://personal-website-puce-ten-89.vercel.app/";
 const CATEGORY_FADE_MS = 600;
 const INTRO_FRAME_FADE_MS = 700;
 const INTRO_FRAME_DELAY_MS = 150;
@@ -293,6 +294,32 @@ export default function SiteExperience() {
               className="text-white/70 transition-[font-weight] hover:font-bold"
             >
               LinkedIn
+            </a>
+          </div>
+
+          <div
+            style={{ fontFamily: "monospace", fontSize: 12 }}
+            className="mt-6 flex items-center justify-center gap-2 text-white/60"
+          >
+            <a
+              href={`https://calwebring.com/prev?current=${SITE_URL}`}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-white"
+            >
+              ←
+            </a>
+            <a href="https://calwebring.com" target="_blank" rel="noreferrer">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://calwebring.com/badge.png" width={36} alt="Cal Webring" />
+            </a>
+            <a
+              href={`https://calwebring.com/next?current=${SITE_URL}`}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-white"
+            >
+              →
             </a>
           </div>
         </div>
