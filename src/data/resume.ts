@@ -121,6 +121,11 @@ export const clientProjects: Project[] = [
     category: "Web Design & Development",
     links: [{ label: "Visit Site", href: "https://mobile-developers-of-berkeley.vercel.app/" }],
   },
+  {
+    title: "Machine Learning at Berkeley",
+    category: "Web Design & Development",
+    links: [{ label: "Visit Site", href: "https://machine-learning-at-berkeley.vercel.app/" }],
+  },
 ];
 
 export type Publication = {

@@ -367,6 +367,25 @@ export default function SiteExperience() {
         <BackButton onClick={closeWindow} />
       </div>
 
+      {/* Resume download link, top right — hidden while a window is open,
+          same as the hero content it sits alongside. */}
+      <div
+        style={{
+          opacity: zoomed ? 0 : 1,
+          pointerEvents: zoomed ? "none" : "auto",
+          transition: "opacity 300ms ease",
+        }}
+        className="fixed right-6 top-6 z-30 font-mono text-sm"
+      >
+        <a
+          href="/Xichen-Song-Resume.pdf"
+          download="Xichen Song Resume.pdf"
+          className="text-white/70 transition-[font-weight] hover:font-bold hover:text-white"
+        >
+          Resume
+        </a>
+      </div>
+
       {/* Category lists also sit outside the scaled wall — their own text
           size would otherwise be multiplied by whatever zoom factor that
           particular window needed, which blows up wildly for long labels.
